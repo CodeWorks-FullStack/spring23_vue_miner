@@ -4,6 +4,8 @@
       alt="">
   </div>
   <div class="col-12 text-center">
+    <!-- NOTE by using data binding on our class, we pass through instructions on when to apply styles to our h1 -->
+    <!-- NOTE the key inside of the object will be which style you want to apply, and the value must be a truthy/falsey statement -->
     <h1 class="fw-bold" :class="{ 'text-danger': purrs < 10, 'text-success': purrs > 25 }">Purrs: {{ purrs }}</h1>
   </div>
 </template>
